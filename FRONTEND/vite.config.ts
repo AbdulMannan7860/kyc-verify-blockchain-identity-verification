@@ -30,7 +30,7 @@ export default defineConfig(({ mode }) => {
       open: true, // auto open browser
       proxy: {
         "/api": {
-          target: apiUrl, // 👈 Use environment variable
+          target: https://your-backend-name.onrender.com, // 👈 Use environment variable
           changeOrigin: true,
           secure: false,
           timeout: 120000,
