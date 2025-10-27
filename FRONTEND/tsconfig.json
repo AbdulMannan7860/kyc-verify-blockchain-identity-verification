@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    /* ✅ Target modern JS and DOM APIs */
+    "target": "ESNext",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+
+    /* ✅ Module system and JSX support */
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "jsx": "react-jsx",
+
+    /* ✅ TypeScript strictness and safety */
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "isolatedModules": true,
+    "noEmit": true,
+
+    /* ✅ Enable smooth import compatibility */
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+
+    /* ✅ Allow JSON and JS interop */
+    "resolveJsonModule": true,
+    "allowJs": false,
+
+    /* ✅ Path alias setup for '@/...' imports */
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": ["*"]
+    }
+  },
+
+  /* ✅ Include project source & custom type files */
+  "include": ["src", "src/types"],
+
+  /* ✅ Exclude dependencies */
+  "exclude": ["node_modules"]
+}
