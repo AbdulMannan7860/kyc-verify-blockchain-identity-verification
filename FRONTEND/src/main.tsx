@@ -7,7 +7,7 @@ import { WalletProvider } from "@/context/WalletContext";
 // 🧠 Automatically route API requests to the correct backend
 if (import.meta.env.MODE === "production") {
   const originalFetch = window.fetch;
-  const baseUrl = "https://your-backend-name.onrender.com"; // 🔥 Replace with your Render backend URL
+  const baseUrl = "https://kyc-verify-blockchain-identity.onrender.com"; // 🔥 Replace with your Render backend URL
 
   window.fetch = (input, init) => {
     if (typeof input === "string" && input.startsWith("/api")) {
